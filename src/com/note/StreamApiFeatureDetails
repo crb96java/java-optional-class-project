@@ -1,0 +1,6 @@
+1.What are the methods are available in Stream API?
+A.Intermediate Operations :
+    - map(), filter(), distinct(), sorted(), limit(), skip()
+  Terminal Operations :
+    - forEach(), toArray(), reduce(), collect(), min(), max(), count(), anyMatch(),
+      allMatch(), noneMatch(), findFirst(), findAny()

@@ -1,0 +1,44 @@
+1.How to create the Optional Class?
+A.The are three creation methods for creating an optional instance.
+    1.Optional.empty() :
+        - Creates an empty Optional object with no value/null value.
+
+    2.Optional.of(T value) :
+        - Creates an Optional object containing a non-null value.
+          Otherwise Throws: NullPointerException if the value provided is null.
+
+    3.Optional.ofNullable(T value) :
+        - Creates an Optional object containing the specified value.
+          Otherwise if the value can be null, in that case, the Optional will be empty.
+
+2.What are the methods are available in the Optional Class for getting a value in an Optional?
+A.Below methods are available in that Optionals Class.
+    1.boolean isPresent() :
+        - Returns true if the Optional contains a non-null value, like with return is type.
+          Otherwise returns false.
+
+    2.T get() :
+        - Returns the value wrapped by the Optional if present.
+          Otherwise Throws: NoSuchElementException if the Optional is empty.
+
+    3.T orElse(T defaultValue) :
+        - Returns the value wrapped by the Optional if present.
+          Otherwise Returns: defaultValue if the Optional is empty.
+
+    4.T orElseGet(Supplier<? extends T> supplier) :
+        - Returns the value wrapped by the Optional if present.
+          Otherwise Invokes the supplier function to provide an alternative value if the Optional is empty.
+
+    5.T orElseThrow(Supplier<? extends X> exceptionSupplier) :
+        - Returns the value wrapped by the Optional if present.
+          Otherwise Throws an exception produced by the exceptionSupplier if the Optional is empty.
+
+    6.void ifPresent(Consumer<? super T> consumer) :
+        - If a value is present, invoke the specified consumer with the value;
+          Otherwise do nothing.
+
+
+3.Diff b/w orElse() and orElseGet() methods?
+    The difference between orElse() and orElseGet() is that orElse() will always be executed
+    if the Optional<T> is null or not.
+    But orElseGet() will only be executed when Optional<T> is null.

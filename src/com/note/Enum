@@ -1,0 +1,39 @@
+What is Enum?
+    - If we want to represent a group of named constants then we can go with Enum's.
+    - Main Use: If we want to crate our own data types then we can use Enum's.
+
+    -   The following characteristics make enum a ‘special’ class:
+        1.enum constants cannot be overridden
+        2.enum doesn’t support the creation of objects
+        3.enum can’t extend other classes
+        4.enum can implement interfaces like classes
+
+    -   Points to remember for Java Enum
+        1.Enum improves type safety
+        2.Enum can be easily used in switch
+        3.Enum can be traversed
+        4.Enum can have fields, constructors and methods
+        5.Enum may implement many interfaces but cannot extend any class because it internally extends Enum class
+
+    -    Java supports two types of Data Types:
+             1.User-Defined Datatypes
+             2.Inbuilt Data Types- int, float, double, char, etc.
+
+Examples:
+    ACTIVATED
+    DEACTIVATED
+    SUSPENDED
+
+    --Status related examples
+    CREATED,
+    APPROVED,
+    REJECTED,
+    CLOSED
+
+
+
+Learning URL's:
+https://medium.com/@georgeberar/springboot-fall-in-love-with-enum-mapping-aa212c5e2056
+https://medium.com/@shreeyaruias/using-enums-in-spring-boot-88d3115fa7ee
+https://www.simplilearn.com/tutorials/java-tutorial/enum-in-java#:~:text=Enum%2C%20introduced%20in%20Java%205,represent%20them%20in%20UPPERCASE%20letters.
+

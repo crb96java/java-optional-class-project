@@ -1,0 +1,15 @@
+1.Diff b/w Pojo & Bean Classes in Java?
+   Pojo Class Rules :
+    -   1.Class is public
+        2.properties are private
+        3.default constructor
+        4.public setter & getter method
+
+    Bean Class Rules :
+     -  1.Class is public
+        2.properties are private
+        3.default constructor
+        4.public setter & getter method
+        5.Bean object should be implemented with Serializable Object.
+
+Note: The diff is Bean object should be implemented with Serializable Object.
